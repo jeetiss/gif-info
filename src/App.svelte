@@ -46,7 +46,7 @@
   {:else}
     <FilePond
       bind:this={pond}
-      labelIdle='Drag & Drop your gif or <span class="filepond--label-action"> Browse </span>'
+      labelIdle='Drag & Drop your gif or <span class="filepond--label-action"> Browse </span> or Paste'
       onaddfile={handleAddFile}
       acceptedFileTypes='image/gif'
     />
