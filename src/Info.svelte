@@ -36,4 +36,15 @@
     display: flex;
     flex-direction: column;
   }
+
+  @media (max-width: 527px) {
+    .core {
+      flex-direction: column;
+    }
+
+    .pair {
+      width: auto;
+    }
+  }
+
 </style>

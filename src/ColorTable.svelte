@@ -26,6 +26,12 @@
     grid-gap: 1px;
   }
 
+  @media (max-width: 527px) {
+    .box {
+      grid-template-columns: repeat(auto-fit, 16px);
+    }
+  }
+
   .color {
     background-color: var(--color);
 
