@@ -6,6 +6,7 @@
   import Frame from './Frame.svelte'
   import Info from './Info.svelte'
   import ColorTable from './ColorTable.svelte'
+  import Paster from './Paster.svelte'
 
   registerPlugin(FilePondPluginFileValidateType)
 
@@ -48,6 +49,10 @@
       onaddfile={handleAddFile}
       acceptedFileTypes='image/gif'
     />
+
+    <Paster on:xpaste={e => {
+      pond.addFile(e.detail.file)
+    }}/>
   {/if}
 </main>
 
