@@ -7,6 +7,7 @@
   import Info from './Info.svelte'
   import ColorTable from './ColorTable.svelte'
   import Paster from './Paster.svelte'
+  import RandomGif from './RandomGif.svelte'
 
   registerPlugin(FilePondPluginFileValidateType)
 
