@@ -1,13 +1,16 @@
 <script>
-  export let colors 
-  export let exists
+  export let colors;
+  export let exists;
 </script>
 
-<div class='label'>local color table</div>
+<div class="label">local color table</div>
 {#if exists}
   <div class="box">
     {#each colors as color}
-      <div class="color" style="--color: rgb({color[0]}, {color[1]}, {color[2]})"></div>
+      <div
+        class="color"
+        style="--color: rgb({color[0]}, {color[1]}, {color[2]})"
+      />
     {/each}
   </div>
 {:else}
@@ -38,6 +41,6 @@
     width: 16px;
     height: 16px;
 
-    border-radius: 2px
+    border-radius: 2px;
   }
 </style>
