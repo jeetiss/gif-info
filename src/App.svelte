@@ -23,10 +23,9 @@
 
       search.set("src", item.source);
 
-      console.log(search);
       window.history.pushState(
-        "object or string",
-        "Title",
+        null,
+        "",
         `${location.origin}${location.pathname}?${search}`
       );
     }
@@ -40,12 +39,12 @@
       })
       .then((gif) => {
         decopressedFames = decompressFrames(gif, true);
-        console.log(gif, decopressedFames);
+        console.log('parsed gif: ', gif);
+        console.log('parsed frames: ', decopressedFames);
       });
   }
 
   onMount(() => {
-    console.log(location.search.slice(1));
     const url = new URLSearchParams(location.search.slice(1));
 
     const src = url.get("src");
